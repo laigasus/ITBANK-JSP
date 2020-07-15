@@ -10,7 +10,6 @@
 
 	<%@ include file = "directive02_header.jsp" %>
 
-
 	안녕하세요! <br>
 	Welcome to my Homepage!! <br>
 	
