@@ -2,5 +2,5 @@
     pageEncoding="UTF-8"%>
 
     <hr>
-    Contact: happy@naver.com / Since: 2020.07.15 ~
+    Contact: okjaeook98@gmail.com / Since: 2020.07.15 ~
     <hr>
