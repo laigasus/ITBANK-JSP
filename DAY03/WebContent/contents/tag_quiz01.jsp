@@ -17,6 +17,7 @@ ArrayList<Integer> list = new ArrayList<>(set);
 Collections.sort(list);
 
 %>
+
 <!DOCTYPE html>
 <html>
 <head>
