@@ -17,13 +17,23 @@ String introduce = request.getParameter("introduce");
 <title>Insert title here</title>
 </head>
 <body>
-<p>
-ID: <%=id %><br>
-PW: <%=pw %><br>
-성별: <%=gender %><br>
-취미: <%=Arrays.toString(hobby)%><br>
-지역: <%=region %><br>
-소개: <%=introduce %><br>
-</p>
+	<div>
+		ID:
+		<%=id %></div>
+	<div>
+		PW:
+		<%=pw %></div>
+	<div>
+		성별:
+		<%=gender %></div>
+	<div>
+		취미:
+		<%=Arrays.toString(hobby)%></div>
+	<div>
+		지역:
+		<%=region %></div>
+	<div>
+		소개:
+		<%=introduce %></div>
 </body>
 </html>
