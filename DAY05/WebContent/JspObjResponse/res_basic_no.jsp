@@ -7,8 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%--자신이 좋아하는 인물을 JspObjRequest에 넣고, 테이블을 제작해주세요
-
- --%>
+	<h2>미성년자입니다. 주류를 구매할 수 없습니다</h2>
+	<a href="res_basic_form.jsp">처음으로 이동하기</a>
 </body>
 </html>
