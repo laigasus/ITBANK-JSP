@@ -14,7 +14,8 @@
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-	crossorigin="anonymous"><!--부트스트랩 활용=외부 CSS-->
+	crossorigin="anonymous">
+<!--부트스트랩 활용=외부 CSS-->
 <style>
 /* .login-btn {
 	height: 50px;
@@ -23,7 +24,6 @@
 	font-family: cursive;
 	background-color: yellow;
 } */
-
 input {
 	background-color: skyblue;
 }
