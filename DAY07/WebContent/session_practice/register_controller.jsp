@@ -1,9 +1,10 @@
+<%@page import="user.UserRepository"%>
 <%@ page import="user.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
     <%
-    
+    request.setCharacterEncoding("utf-8");
     /*
     user.User
      - 사용자의 입력값을 받아서 객체로 만들수 있는 클래스를 하나 제작하세요.
@@ -43,8 +44,10 @@
    			request.getParameter("nickname")
    			);
     
-    
-    
+   	UserRepository.save(user);
+   	UserRepository.showUsers();
+   	
+    response.sendRedirect("register_result.jsp");
     
     
     
