@@ -22,15 +22,25 @@ public class UserRepository {
 
 		}
 	}
-	
-	//매개값으로 id를 받아서 해당 id를 가진 객체가 userList에 있는지 탐색하는 메서드
+
+	// 매개값으로 id를 받아서 해당 id를 가진 객체가 userList에 있는지 탐색하는 메서드
 	public static User getUser(String id) {
-		for(User user: userList) {
-			if(user.getAccount().contentEquals(id))
-			{
+		for (User user : userList) {
+			if (user.getAccount().contentEquals(id)) {
 				return user;
 			}
 		}
+		return null;
+	}
+
+	public static User deleteUser(String id) {
+//		for(User user: userList) {
+//			if(user.getAccount().contentEquals(id))
+//			{
+//				userList.remove(user);
+//			}
+//		}
+		userList.remove(getUser(id));
 		return null;
 	}
 }
