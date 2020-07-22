@@ -1,4 +1,3 @@
-<%@page import="sun.nio.cs.HistoricallyNamedCharset"%>
 <%@page import="user.UserRepository"%>
 <%@page import="user.User"%>
 

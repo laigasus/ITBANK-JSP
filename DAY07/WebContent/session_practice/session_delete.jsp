@@ -15,5 +15,5 @@ session.invalidate();
 %>
 <script>
 alert("회원 탈퇴 처리 되었습니다");
-location.href="session_login.jsp";
+location.href="login_form.jsp";
 </script>
