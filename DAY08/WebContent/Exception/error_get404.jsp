@@ -7,24 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	<h1>회원 가입 성공!</h1>
-	<a href="login_form.jsp">로그인 하기</a>
-	<a href="register_form.jsp">회원가입</a>
-
+<a href="hello.jsp">404 에러 유발!</a>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
