@@ -1,20 +1,27 @@
 package kr.co.jsp.score;
 
 public class ScoreBean {
-
-	private int eng;
+	
+	/*
+	 # 여기에는 국어점수 (kor), 영어점수(eng)
+	 수학점수(math), 총점(total), 평균(average -> double)
+	 총 5개의 데이터를 관리하는 자바빈 클래스를 구성하세요.
+	 */
+	
 	private int kor;
+	private int eng;
 	private int math;
 	private int total;
-	private double avg;
+	private double average;
+	
+	public ScoreBean() {}
 
-	public ScoreBean(int eng, int kor, int math, int total, double avg) {
-		super();
-		this.eng = eng;
+	public int getKor() {
+		return kor;
+	}
+
+	public void setKor(int kor) {
 		this.kor = kor;
-		this.math = math;
-		this.total = total;
-		this.avg = avg;
 	}
 
 	public int getEng() {
@@ -23,14 +30,6 @@ public class ScoreBean {
 
 	public void setEng(int eng) {
 		this.eng = eng;
-	}
-
-	public int getKor() {
-		return kor;
-	}
-
-	public void setKor(int kor) {
-		this.kor = kor;
 	}
 
 	public int getMath() {
@@ -49,12 +48,22 @@ public class ScoreBean {
 		this.total = total;
 	}
 
-	public double getAvg() {
-		return avg;
+	public double getAverage() {
+		return average;
 	}
 
-	public void setAvg(double avg) {
-		this.avg = avg;
+	public void setAverage(double average) {
+		this.average = average;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
