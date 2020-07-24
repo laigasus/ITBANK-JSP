@@ -79,4 +79,14 @@ INSERT INTO members VALUES('park4321', 'ppp4321', '박영희', 'park@naver.com')
 ROLLBACK;
 
 --테이블 객체 삭제
-DROP TABLE members;
+DROP TABLE members;     --DROP은 롤백 안됨, (INSERT, DELETE, UPDATE만 가능)
+
+TRUNCATE TABLE members; --데이블 내부 데이터를 모두 삭제, TABLE은 유지
+
+
+--테이블 컬럼 수정
+ALTER TABLE members ADD address VARCHAR(100) NOT NULL;  --컬럼 추가
+ALTER TABLE members DROP COLUMN address;                --컬럼 삭제
+ALTER TABLE members RENAME COLUMN id TO account;        --컬럼 이름 변경
+
+
