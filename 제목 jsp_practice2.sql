@@ -9,3 +9,11 @@ CREATE TABLE scores(
 );
 
 select * from scores;
+
+--원할때마다 자동으로 숫자를 올려주는 시퀀스 객체를 생성
+CREATE SEQUENCE id_seq
+START WITH 1
+INCREMENT BY 1
+MAXVALUE 1000
+NOCYCLE
+NOCACHE;
