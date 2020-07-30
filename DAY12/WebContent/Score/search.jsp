@@ -28,6 +28,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+<%if(scoreList.size()>0) {%>
 <table border="1">
 		<thead>
 			<tr>
@@ -56,6 +58,10 @@
 			<% } %>
 		</tbody>
 	</table>
+	<%}else{%>
+	<h2>검색 결과가 없습니다</h2>
+	<%} %>
+	
 	<br>
 	<a href="insert_form.jsp">새로운 점수 등록하기</a>
 
