@@ -159,7 +159,7 @@ public class BoardDAO implements IBoardDAO {
 		// TODO Auto-generated method stub
 		boolean flag = false;
 
-		String sql = "UPDATE board SET title=?,content=? WHERE board_id=?";
+		String sql = "UPDATE board SET title=?, content=? WHERE board_id=?";
 		try {
 			conn = getConnection();
 			pstmt = conn.prepareStatement(sql);
@@ -169,12 +169,11 @@ public class BoardDAO implements IBoardDAO {
 
 			int rn = pstmt.executeUpdate();
 
-			if (rn == 1) {
+			if (rn == 1)
 				flag = true;
-			}
-			else {
+			else
 				flag = false;
-			}
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -206,7 +205,7 @@ public class BoardDAO implements IBoardDAO {
 			
 			if(rn == 1) flag = true;
 			else flag = false;
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {

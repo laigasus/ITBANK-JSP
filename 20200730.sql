@@ -15,3 +15,7 @@ CREATE SEQUENCE bid_seq
     
     drop table board;
     drop sequence bid_seq;
+    
+select * from board order by board_id DESC;
+
+UPDATE board SET title='ppaps', content='981103' WHERE board_id=1;
