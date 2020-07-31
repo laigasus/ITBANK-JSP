@@ -1,0 +1,40 @@
+<%@page import="kr.co.jsp.board.model.Board"%>
+<%@page import="kr.co.jsp.board.model.BoardDAO"%>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+<%
+	int bId = Integer.parseInt(request.getParameter("bId"));
+
+//ScoreDAO dao = ScoreDAO.getInstance();
+//boolean flag = dao.delete(id);
+
+if (BoardDAO.getInstance().delete(bId)) {
+%>
+<script>
+	alert("삭제가 정상 처리되었습니다.");
+	location.href = "list.jsp";
+</script>
+<%
+	} else {
+%>
+<script>
+	alert("삭제에 실패했습니다.");
+	location.href = "list.jsp";
+</script>
+<%
+	}
+%>
+
+
+
+
+
+
+
+
+
+
+
+

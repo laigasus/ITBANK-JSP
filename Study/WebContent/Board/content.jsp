@@ -25,7 +25,7 @@ Board article = BoardDAO.getInstance().selectOne(bId);
 		# 제목:
 		<%=article.getTitle()%>
 		<br>
-		# 내용:
+		# 내용:<br>
 		<textarea rows="5" readonly>
 		<%=article.getContent()%>
 		</textarea>
@@ -33,8 +33,9 @@ Board article = BoardDAO.getInstance().selectOne(bId);
 		# 작성일:
 		<%=article.getCreateAt()%>
 	</p>
-	<a href="list.jsp">글 목록 보기</a>
-	<a href="modified.jsp?bId=<%=article.getBoardId()%>">글 수정하기</a>
+	<a href="list.jsp">목록 보기</a>
+	<a href="modified.jsp?bId=<%=article.getBoardId()%>">수정하기</a>
+	<a href="delete.jsp?bId=<%=article.getBoardId()%>">삭제하기</a>
 
 </body>
 </html>

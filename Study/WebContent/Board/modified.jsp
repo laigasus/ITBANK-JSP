@@ -7,6 +7,7 @@
 	//사용자에게 본인이 썼던 글을 그비노적으로 제공을 하고
 //수정할 수 있는 촘을 제공해야 하기 떄문에 
 //selectOne()메서드를 호출하여 글 번호에 해당하는 모든 클 정보를 얻어옵니다
+request.setCharacterEncoding("utf-8");
 int bId = Integer.parseInt(request.getParameter("bId"));
 Board article = BoardDAO.getInstance().selectOne(bId);
 %>

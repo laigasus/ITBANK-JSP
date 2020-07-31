@@ -37,8 +37,8 @@ public class BoardDAO implements IBoardDAO {
 	//Connection 객체를 제공하는 메서드
 	private static Connection getConnection() throws Exception {
 		
-		//String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String url="jdbc:oracle:thin:@localhost:1521/XEPDB1";//18G 버전
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		//String url="jdbc:oracle:thin:@localhost:1521/XEPDB1";//18G 버전
 		String uid = "jsp";
 		String upw = "jsp";
 		

@@ -17,6 +17,7 @@ BoardDAO의 update()를 이용하여 수정한 객체를 DB에 적용시켜 주�
 	
 	Board article = new Board();
 	
+	article.setBoardId(Integer.parseInt(request.getParameter("bId")));
 	article.setWriter(request.getParameter("writer"));
 	article.setTitle(request.getParameter("title"));
 	article.setContent(request.getParameter("content"));
