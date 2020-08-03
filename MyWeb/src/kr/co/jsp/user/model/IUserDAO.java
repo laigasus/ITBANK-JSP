@@ -14,6 +14,7 @@ public interface IUserDAO {
 	// 특정 회원의 모든 정보를 얻어오는 메서드
 	UserVO getUserInfo(String id);
 	
-	
+	// 비밀번호를 변경하는 메서드
+	void changePassword(String id, String pw);
 
 }

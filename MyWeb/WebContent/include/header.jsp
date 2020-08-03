@@ -53,11 +53,22 @@
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 
-					<li><a href="">HOME</a></li>
-					<li><a href="">Member</a></li>
+					<li><a href="/MyWeb">HOME</a></li>
+					<li><a href="/MyWeb/member/member.jsp">Member</a></li>
 					<li><a href="">BOARD</a></li>
-					<li><a href="">LOGIN</a></li>
-					<li><a href="" style="color: red">JOIN</a></li>
+					<%
+						if (session.getAttribute("user_id") == null) {
+					%>
+					<li><a href="/MyWeb/user/user_login.jsp">LOGIN</a></li>
+					<li><a href="/MyWeb/user/user_join.jsp" style="color: red">JOIN</a></li>
+					<%
+						} else {
+					%>
+					<li><a href="/MyWeb/user/user_logout.jsp">LOGOUT</a></li>
+					<li><a href="/MyWeb/user/user_mypage.jsp" style="color: red">MyPage</a></li>
+					<%
+						}
+					%>
 				</ul>
 			</div>
 
