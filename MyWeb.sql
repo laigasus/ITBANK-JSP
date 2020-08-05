@@ -4,4 +4,6 @@ CREATE TABLE my_user(
     user_name       VARCHAR2(30)    NOT NULL,
     user_email      VARCHAR2(80),
     user_address    VARCHAR2(80)
-    );
+);
+
+select * from my_user;    
