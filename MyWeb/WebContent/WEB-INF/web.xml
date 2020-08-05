@@ -19,9 +19,14 @@
   	<servlet-name>basic</servlet-name>
   	<url-pattern>/basic</url-pattern>
   </servlet-mapping>
-  
-  
-  
+
+<resource-ref>
+      <description>Oracle DataSource example</description>
+    <res-ref-name>jdbc/myOracle</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+
 </web-app>
 
 
