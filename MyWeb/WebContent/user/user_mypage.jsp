@@ -29,8 +29,8 @@
 		<hr>
 		<br>
 		<p>
-			<a href="user_change_pw.jsp">비밀번호 변경</a>
-			<a href="user_update.jsp">회원 정보 변경</a>
+			<a href="user_change_pw.jsp">비밀번호 변경</a> 
+			<a href="user_update.jsp">회원 정보 변경</a> 
 			<a href="user_delete.jsp">회원 탈퇴</a>
 		</p>
 		<br>

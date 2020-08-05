@@ -8,17 +8,14 @@
 </head>
 <body>
 
-	<form action="jstl_choose.jsp">
-		# 이름: <input type="text" name="name"> <br>
-		# 나이: <input type="text" name="age"> <br>
+	<form action="jstl_choose_test.jsp">
+		# 점수를 입력하세요: 
+		<input type="text" name="point" size="5">점
 		<input type="submit" value="확인">
 	</form>
 
 </body>
 </html>
-
-
-
 
 
 

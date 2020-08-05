@@ -8,10 +8,9 @@
 </head>
 <body>
 
-	<form action="jstl_choose.jsp">
-		# 이름: <input type="text" name="name"> <br>
-		# 나이: <input type="text" name="age"> <br>
-		<input type="submit" value="확인">
+	<form action="/MyWeb/basic" method="post">
+		# 아이디: <input type="text" name="account">
+		<button type="submit">서블릿 페이지 열어보기!</button>
 	</form>
 
 </body>

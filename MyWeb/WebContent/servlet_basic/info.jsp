@@ -8,28 +8,16 @@
 </head>
 <body>
 
+	<h2>회원 정보 확인하기</h2>
 	<p>
-		<% int i = 5; %>
-		<%= 10 * 4 %> <br> <!-- out.print(10 * 4) -->
-		<%= 5.55 + 3 %> <br>
-		<%= "안녕하세요~" %> <br>
-		<%= i %>
-	</p>
-	
-	<hr>
-	
-	<p>
-		${10 * 4} <br>
-		${5.55 + 3} <br>
-		${'안녕하세요~'} <br>
-		${i} 
+		# 아이디: ${sessionScope.user.id} <br>
+		# 이름: ${sessionScope.user.name} <br>
+		# 이메일: ${sessionScope.user.email} <br>
+		# 주소: ${sessionScope.user.address} <br>
 	</p>
 
 </body>
 </html>
-
-
-
 
 
 
