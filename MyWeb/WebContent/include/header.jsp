@@ -66,7 +66,7 @@
                         <a href="/MyWeb/member/member.jsp">Member</a>
                     </li>
                     <li>
-                        <a href="">BOARD</a>
+                        <a href="/MyWeb/list.board">BOARD</a>
                     </li>
                     <%-- if(session.getAttribute("user_id") == null) { --%>
                     <c:choose>
