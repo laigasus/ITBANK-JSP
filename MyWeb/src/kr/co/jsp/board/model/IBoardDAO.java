@@ -3,7 +3,7 @@ package kr.co.jsp.board.model;
 import java.util.List;
 
 public interface IBoardDAO {
-	
+
 	//글 등록 메서드
 	void regist(String writer, String title, String content);
 	
@@ -21,3 +21,19 @@ public interface IBoardDAO {
 	
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
