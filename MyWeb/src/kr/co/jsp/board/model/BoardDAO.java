@@ -124,4 +124,29 @@ public class BoardDAO implements IBoardDAO {
 
 	}
 
+	@Override
+	public BoardVO searchBoard(String title) {
+		// TODO Auto-generated method stub
+		BoardVO vo = null;
+		String sql = "SELECT * FROM my_board WHERE title LIKE ?";
+		try (Connection conn = ds.getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
+			pstmt.setString(1, "%"+title+"%");
+			ResultSet rs = pstmt.executeQuery();
+
+			if (rs.next()) {
+				vo=new BoardVO(
+						rs.getInt("board_id"),
+						rs.getString("writer"),
+						rs.getString("title"),
+						rs.getString("content"),
+						rs.getDate("reg_date"),
+						rs.getInt("hit")						
+						);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return vo;
+	}
+
 }

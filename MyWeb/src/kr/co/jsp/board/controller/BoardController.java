@@ -111,6 +111,13 @@ public class BoardController extends HttpServlet {
 			response.sendRedirect("/MyWeb/list.board");
 			break;
 
+		case "search":
+			System.out.println("글 검색 요청이 들어옴");
+			sv = new DeleteServiceImpl();
+			sv.execute(request, response);
+
+			response.sendRedirect("/MyWeb/list.board");
+			break;
 		}
 
 	}
