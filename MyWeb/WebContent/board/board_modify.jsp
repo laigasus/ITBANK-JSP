@@ -26,28 +26,28 @@
                        <h2>게시글 수정 페이지</h2>
                    </div>
                    <div class="panel-body">
-                       <form action="update.board" method="post">
-                       	   <input type="hidden" name="bId" value="">
+                       <form action="/MyWeb/update.board" method="post">
+                       	   <input type="hidden" name="bId" value="${modifyBoard.boardId}">
                            <div class="form-group">
                                <label for="writer" hidden>작성자</label>
-                               <input id="writer" name="bWriter" value="" 
+                               <input id="writer" name="bWriter" value="${modifyBoard.writer}" 
                                type="text" class="form-control" readonly>
                            </div>
    
                            <div class="form-group">
                                <label for="title" hidden>글제목</label>
-                               <input id="title" name="bTitle" type="text" class="form-control" value="">
+                               <input id="title" name="bTitle" type="text" class="form-control" value="${modifyBoard.title}">
                            </div>
    
                            <div class="form-group">
                                <label for="content" hidden>글내용</label>
-                               <textarea id="content" name="bContent" class="form-control" rows="5"></textarea>
+                               <textarea id="content" name="bContent" class="form-control" rows="5">${modifyBoard.content}</textarea>
                            </div>
                            
                      
                      <div>
                             <button type="submit" class="btn btn-primary form-control" onclick="return confirm('수정하시겠습니까?')">수정</button>
-                            <button type="button" class="btn btn-danger form-control" onclick="location.href='list.board'">취소</button>
+                            <button type="button" class="btn btn-danger form-control" onclick="location.href='/MyWeb/list.board'">취소</button>
                           </div>
                        </form>
                        

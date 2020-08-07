@@ -61,7 +61,7 @@
 			<tbody>
 				<tr>
 					<td colspan="5" align="right">
-						<form action="" class="form-inline" >
+						<form action="/MyWeb/search.board" class="form-inline" >
 						  <div class="form-group">
 						    <input type="text" name="search" placeholder="제목검색" class="form-control" >
 						  	<input type="submit" value="검색" class="btn btn-default">
