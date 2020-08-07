@@ -7,6 +7,8 @@ CREATE TABLE my_user(
 );
 
 select * from my_user;
+select * from my_board;
+delete from my_board where board_id=1;
 
 CREATE TABLE my_board(
 board_id    NUMBER  PRIMARY KEY,
